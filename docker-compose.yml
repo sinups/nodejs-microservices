@@ -12,16 +12,6 @@ services:
     build: ./two-service
     ports:
       - "9001:9000"
-  dbservice:
-    container_name: mongodbservicecontainer
-    image: mongo
-    ports:
-      - "27020:27017"
-  redis:
-    container_name: redisservicecontainer
-    image: redis
-    ports:
-      - "9379:6379"
   nginx:
     container_name: nginxservicecontainer
     image: nginx:alpine
